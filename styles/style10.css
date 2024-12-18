@@ -1,0 +1,431 @@
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Pacifico", sans-serif;
+  src: url(../styles/Montserrat-VariableFont_wght.ttf);
+  src: url(../styles/Pacifico-Regular.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0; 
+}
+
+a {
+  text-decoration: none;
+}
+
+.block {
+  width: 1500px;
+  height: 4000px;
+  background-color: white;
+  margin: 0 auto;
+  border-bottom: 2px solid lightgray;
+}
+
+.content {
+  width: 1200px;
+  height: 4000px;
+  margin: 0 auto;
+}
+
+header {
+  width: 1200px;
+  height: 84px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerMenu,
+.footerMenu {
+  width: 534px;
+  display: flex;
+  justify-content: center;
+  column-gap: 60px;
+  padding-left: 20px;
+}
+
+.headerMenu a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  color: #101010;
+}
+
+.logo {
+  background-image: url(../images/Logo.png);
+  width: 109px;
+  height: 84px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.phone {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  text-align: right;
+  color: #a52424;
+}
+
+.top {
+  width: 1200px;
+  height: 680px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.topText {
+  width: 443px;
+  height: 347px;
+  margin-top: 120px;
+}
+
+.topPhoto {
+  width: 674px;
+  height: 677px;
+  background-image: url(../images/julie.png);
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 72px;
+  letter-spacing: 0.1em;
+  color: #232323;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+}
+
+.topText h4 {
+  padding-top: 30px;
+  padding-bottom: 60px;
+  color: #101010;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #fff;
+  border: 0.5px solid #a52424;
+}
+
+button a {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: #a52424;
+}
+
+.aboutMe {
+  width: 100%;
+  height: 800px;
+  padding-top: 40px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 64px;
+  letter-spacing: 0.05em;
+  color: #232323;
+  padding-bottom: 10px;
+  padding-top: 60px;
+}
+
+.aboutMeContent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutMeLeft {
+  width: 430px;
+  height: 600px;
+}
+
+.imageShadowLeft {
+  width: 375px;
+  height: 600px;
+  background: white;
+  box-shadow: 1px 1px 3px 1px rgb(227, 227, 227);
+}
+
+.aboutMeImageLeft {
+  width: 430px;
+  height: 500px;
+  position: absolute;
+  background-image: url(../images/aboutMeLeft.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.imageShadowLeft h4 {
+  text-align: right;
+  padding-top: 470px;
+  color: #a52424;
+  padding-right: 50px;
+}
+
+.aboutMeRight {
+  width: 650px;
+  height: 600px;
+}
+
+.aboutMeRight h4 {
+  color: #a52424;
+}
+
+.aboutMeRight p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  color: #232323;
+  padding-top: 20px;
+  width: 90%;
+}
+
+.imageShadowRight {
+  width: 500px;
+  height: 340px;
+  margin-left: auto;
+  margin-top: 20px;
+  background: white;
+  box-shadow: 1px 1px 3px 1px rgb(227, 227, 227);
+}
+
+.aboutMeImageRight {
+  width: 600px;
+  height: 250px;
+  position: absolute;
+  z-index: 5;
+  background-image: url(../images/aboutMeRight.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  margin-top: 65px;
+}
+
+.portfolio h2 {
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+.portfolio {
+  width: 1200px;
+  height: 800px;
+  padding-top: 10px;
+}
+
+.portfolioContent {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolioItem {
+  width: 32%;
+  text-align: left;
+}
+
+.portfolioItem img {
+  width: 340px;
+  height: 480px;
+}
+
+.portfolioItem h4 {
+  padding-top: 10px;
+}
+
+.portfolioItem p {
+  padding: 5px 0px 10px 0px;
+}
+
+.price {
+  width: 1200px;
+  height: 800px;
+  padding-top: 40px;
+}
+
+.price h2 {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.priceContent {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.priceItem {
+  width: 500px;
+  height: 700px;
+}
+
+.pricePhoto {
+  width: 500px;
+  height: 300px;
+  background-image: url(../images/pricePhoto.png);
+  background-size: 300px 300px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: absolute;
+  z-index: 5;
+}
+
+.priceVideo {
+  width: 500px;
+  height: 300px;
+  background-image: url(../images/priceVideo.png);
+  background-size: 300px 300px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: absolute;
+  z-index: 5;
+}
+
+.priceInfo {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 200px;
+  margin-top: 100px;
+  background: white;
+  box-shadow: 1px 1px 3px 1px rgb(227, 227, 227);
+}
+
+.priceInfo h4 {
+  text-align: center;
+  color: #a52424;
+  padding: 10px 0px;
+}
+
+table {
+  width: 440px;
+  font-weight: 400px;
+  font-size: 18px;
+  color: #232323;
+  margin: 20px 0px 20px 30px;
+}
+
+td:last-child {
+  text-align: right;
+}
+
+.buy {
+  width: 440px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 27px;
+  margin-top: 20px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 36px;
+  color: #a52424;
+}
+
+td {
+  padding: 5px 0px;
+}
+
+.appointment {
+  width: 1200px;
+  height: 700px;
+  padding-top: 10px;
+}
+
+.appointment h2 {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.appointmentContent {
+  width: 1200px;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.appointmentPhoto {
+  width: 600px;
+  display: flex;
+  background-image: url(../images/appointmentLeft.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 300px 500px;
+  background-position-x: -7px;
+}
+
+.appointmentPhotoRight {
+  width: 600px;
+  background-image: url(../images/appointmentRight.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 350px 600px;
+}
+
+.form {
+  width: 500px;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  width: 500px;
+  height: 50px;
+  padding-left: 10px;
+  cursor: pointer;
+  margin-bottom: 35px;
+}
+
+textarea {
+  width: 500px;
+  height: 300px;
+  padding-left: 10px;
+  cursor: pointer;
+  margin-bottom: 35px;
+  resize: none;
+}
+
+.submit {
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #a52424;
+  border: 1px solid #a52424;
+  background-color: #fff;
+}
+
+.blockFooter {
+  width: 1500px;
+  height: 100px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.footer {
+  width: 1200px;
+  height: 84px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.socialNet {
+  width: 30px;
+  height: 27px;
+}
+ .email {
+  height: 33px; 
+ }
